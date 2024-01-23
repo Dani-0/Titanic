@@ -24,7 +24,7 @@ X = data[features]
 Y = data[label]
 
 print("*"*50, "\nExamine Null Data in Features:\n")
-print(X.isna().sum(),Y.isna().sum())
+print(f"NaNs in X: {X.isna().sum()}, Y: {Y.isna().sum()}")
 
 print("*"*50, "\nArray Shapes:\n")
 print(f"Features array shape: {X.shape}")
